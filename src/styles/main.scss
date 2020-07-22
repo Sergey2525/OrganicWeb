@@ -43,6 +43,30 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
+  &__image {
+    position: absolute;
+  }
+  &__tomato{
+    right: 114px;
+    bottom: -75px;
+  }
+  &__avocado {
+    top: 47px;
+    right: -18px;
+  }
+  &__cucumber {
+    top: 0;
+    left: 682px;
+  }
+  &__pepper {
+    top: 400px;
+    left: 28px;
+  }
+  &__beans {
+    left: -8px;
+    bottom: -35px;
+  }
 }
 .main {
   display: flex;
@@ -61,6 +85,7 @@ body {
     border: 1px solid rgba($grey,$alpha);
     border-radius: 100%;
     padding: 53px;
+    position: relative;
     &__image {
       border: 1px solid rgba($grey,$alpha);
       border-radius: 100%;
@@ -69,6 +94,63 @@ body {
         border-radius: 100%;
         box-shadow: 15px 48px 42px 0px rgba($grey,$alpha);
       }
+    }
+    &__btn {
+      background-color: transparent;
+      border: none;
+      color: rgba($grey,0.8);
+      text-align: left;
+      position: absolute;
+      span {
+        display: block;
+        color: rgba($grey,1);
+        margin-top: 6px;
+      }
+      &::before {
+        content: "";
+        display: block;
+        width: 11px;
+        height: 11px;
+        border-radius: 100%;
+        background-color: $grey;
+        box-shadow: 0 0 0 4px $white,0 0 0 5px $grey;
+        position: absolute;
+      }
+      &:focus {
+        outline: none;
+        &::before {
+        content: "";
+        background-color: $orange;
+        box-shadow: 0 0 0 4px $white,0 0 0 5px $orange;
+        }
+      }
+    }
+    &__01 {
+      top: 45px;
+      left: 58px;
+      &::before {
+      top: 22px;
+      left: 91px;
+      }
+     
+    }
+    &__02 {
+      top: 193px;
+      right: -5px;
+      &::before {
+      top: 20px;
+      right: 95px;
+      }
+     
+    }
+    &__03 {
+      bottom: -47px;
+      right: 240px;
+      &::before {
+        bottom: 53px;
+        right: 32px;
+      }
+     
     }
   }
 }
