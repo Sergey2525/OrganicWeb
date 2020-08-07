@@ -14,7 +14,7 @@
   &-item {
     display: flex;
     justify-content: space-between;
-    flex: 0 0 66%;
+    flex: 0 0 66.4%;
   }
   &-info {
     margin-right: 8px;
@@ -27,7 +27,7 @@
   list-style-type: none;
   font-size: 1.12rem;
   &__item {
-    margin-bottom: 33px;
+    margin-bottom: 1.68rem;
   }
   &__link {
     text-decoration: none;
@@ -37,6 +37,7 @@
     text-decoration: none;
     color: $grey;
     font-size: 1.68rem;
+    margin-bottom: 2.06rem;
     transition: 0.3s ease;
     &:hover {
       color: $orangeHover;
@@ -105,17 +106,23 @@
 .box-copyright {
   display: flex;
   justify-content: space-between;
-  margin-top: 38px;
+  margin-top: 1.81rem;
   &__copy {
     margin-left: 5px;
+    margin-top: 27px;
+  }
+  &__text {
+    margin-top: 29px;
+    color: #a6a8a4;
   }
   &__link {
     text-decoration: none;
-    color: $grey;
+    color: #27300f;
+    opacity: 0.6;
     transition: 0.3s ease;
     &:hover {
       color: #000000;
-      font-weight: 500;
+      opacity: 1;
     }
   }
 }
