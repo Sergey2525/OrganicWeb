@@ -6,15 +6,24 @@
     width: 179px;
     height: 48px;
     margin-top: 9px;
+    @media (max-width: 768px) {
+      margin: 0 auto 30px;
+    }
   }
 }
 .box-footer {
   display: flex;
   justify-content: space-between;
+  @media (max-width: 768px) {
+    display: block;
+  }
   &-item {
     display: flex;
     justify-content: space-between;
     flex: 0 0 66.4%;
+    @media (max-width: 1200px) {
+      flex: 0 0 72%;
+    }
   }
   &-info {
     margin-right: 8px;
