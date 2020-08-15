@@ -2,12 +2,22 @@
   border-top: 1px solid $grey;
   padding-top: 77px;
   padding-bottom: 20px;
+  @media (max-width: 320px) {
+    padding-top: 35px;
+    padding-bottom: 20px;
+  }
   .logo {
     width: 179px;
     height: 48px;
     margin-top: 9px;
     @media (max-width: 768px) {
       margin: 0 auto 30px;
+    }
+    @media (max-width: 320px) {
+      width: 118px;
+      height: 48px;
+      margin-top: 6px;
+      margin-bottom: 12px;
     }
   }
 }
@@ -24,19 +34,52 @@
     @media (max-width: 1200px) {
       flex: 0 0 72%;
     }
+    @media (max-width: 320px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
   }
   &-info {
     margin-right: 8px;
+    @media (max-width: 320px) {
+      margin-top: 0px;
+      margin-right: 0;
+    }
     &:last-child {
       margin: 0;
+    }
+    &__nav {
+      @media (max-width: 320px) {
+        margin-bottom: 19px;
+      }
+    }
+    &__tel {
+      @media (max-width: 320px) {
+        margin-top: 19px;
+        margin-bottom: 19px;
+      }
     }
   }
 }
 .box-footer-list {
   list-style-type: none;
   font-size: 1.12rem;
+  @media (max-width: 320px) {
+    font-size: 0.75rem;
+  }
+  .line {
+    @media (max-width: 320px) {
+      display: inline;
+      margin-left: 17px;
+      margin-right: 11px;
+    }
+  }
   &__item {
     margin-bottom: 1.68rem;
+    @media (max-width: 320px) {
+      margin-bottom: 8px;
+    }
   }
   &__link {
     text-decoration: none;
@@ -66,6 +109,9 @@
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
+  @media (max-width: 320px) {
+    margin-top: 31px;
+  }
   &__vk {
     opacity: 0.8;
     background-repeat: no-repeat;
@@ -116,13 +162,25 @@
   display: flex;
   justify-content: space-between;
   margin-top: 1.81rem;
+  @media (max-width: 320px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 0.62rem;
+  }
   &__copy {
     margin-left: 5px;
     margin-top: 27px;
+    @media (max-width: 320px) {
+      margin-top: -21px;
+    }
   }
   &__text {
     margin-top: 29px;
     color: #a6a8a4;
+    @media (max-width: 320px) {
+      margin-top: 6px;
+    }
   }
   &__link {
     text-decoration: none;
