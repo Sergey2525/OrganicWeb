@@ -95,7 +95,7 @@
   &__button {
     width: 2.5rem;
     height: 2.5rem;
-    margin-left: 10px;
+    margin-left: 30px;
     background-color: $orange;
     border: none;
     border-radius: 100%;
@@ -112,7 +112,7 @@
   &__count {
     position: absolute;
     top: 4px;
-    right: 0px;
+    right: -21px;
     font-size: 0.5rem;
     color: $white;
     @media (max-width: 990px) {
